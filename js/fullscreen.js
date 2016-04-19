@@ -85,7 +85,6 @@
                     fullScreenChange();
                     element.style.cssText="";
                 }
-                console.log(event);
             }
             function fullScreenChange(){
                 if(!self.fullscreenedElement()){
