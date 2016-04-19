@@ -30,6 +30,8 @@
                 document.mozCancelFullScreen();
             } else if(document.webkitExitFullscreen) {
                 document.webkitExitFullscreen();
+            }else if(document.msExitFullscreen) {
+                document.msExitFullscreen();
             } else{
                 this.selfconf.element.style.cssText="";
             }
@@ -75,14 +77,15 @@
                 document.addEventListener("mozfullscreenchange", fullScreenChange);
                 document.addEventListener("webkitfullscreenchange", fullScreenChange);
                 document.addEventListener("msfullscreenchange", fullScreenChange);
-            } else {
-                document.onkeypress=function(event){
-                    var key = event.which || event.keyCode;
-                    if(key==27){
-                        fullScreenChange();
-                        element.style.cssText="";
-                    }
+            }
+            document.onkeydown=function(event){
+                event=event || window.event;
+                var key = event.keyCode || event.which;
+                if(key==27){
+                    fullScreenChange();
+                    element.style.cssText="";
                 }
+                console.log(event);
             }
             function fullScreenChange(){
                 if(!self.fullscreenedElement()){
