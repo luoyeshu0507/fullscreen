@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fullscreen.js demo</title>
+	<style>
+		.container{
+			width: 50%;
+			height: 300px;
+			margin:50px auto;
+		}
+		#full{
+			width:100%;
+			height: 100%;
+			position: relative;
+			background-color:#1a85ba;
+		    background:linear-gradient(to bottom right, #00a5a5, #3366cc);
+		    color:#fff;
+		    font-size:36px;
+		    text-align: center;
+		    line-height: 200px;
+		}
+		#btn{
+			position: absolute;
+			top:20px;
+			right: 20px;
+			width: 40px;
+			font-size:16px;
+			height: 24px;
+			line-height: 24px;
+			text-align: center;
+			cursor: pointer;
+			background-color: green;
+		}
+		#btn.active{
+			 background-color:red;
+		}
+	</style>
+	<script src="js/fullscreen.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="full">
+			Hello World!
+			<div id="btn">全屏</div>
+		</div>
+	</div>
+	<script>
+		var full=new fullscreen({
+			btnClass:"active",
+			element:document.getElementById("full"),
+			fullscreenBtn:document.getElementById("btn")
+		});
+	</script>
+</body>
+</html>
