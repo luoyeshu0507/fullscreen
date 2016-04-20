@@ -20,4 +20,4 @@ var full=new fullscreen({
 | fullscreenedElement |           the dom element which is displaying on full screen |
 
 ## browser supported
-Most browser supported this,even ie6 7 8.
+Almost every browser is supported even ie6 7 8.
