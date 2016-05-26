@@ -93,16 +93,16 @@
             }
         }
     }
-    function hasClass(obj, cls) {
-        if (obj != null) return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+    function hasClass(ele, cls) {
+        return ele && ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)')) || false;
     }
-    function addClass(obj, cls) {
-        if (!hasClass(obj, cls)) obj.className += " " + cls;
+    function addClass(ele, cls) {
+        if (!hasClass(ele, cls)) ele.className += " " + cls;
     }
-    function removeClass(obj, cls) {
-        if (hasClass(obj, cls)) {
+    function removeClass(ele, cls) {
+        if (hasClass(ele, cls)) {
             var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
-            obj.className = obj.className.replace(reg, ' ');
+            ele.className = ele.className.replace(reg, ' ');
         }
     }
     win.fullscreen=fullscreen;
