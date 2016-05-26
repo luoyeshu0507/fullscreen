@@ -94,7 +94,7 @@
         }
     }
     function hasClass(obj, cls) {
-        return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+        if (obj != null) return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
     }
     function addClass(obj, cls) {
         if (!hasClass(obj, cls)) obj.className += " " + cls;
