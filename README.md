@@ -1,7 +1,7 @@
 # fullscreen.js
-a js which let you to fullscreen DOM Element on browser.
+A js plugin which let you fullscreen a DOM Element on browser.
 
-here is [demo](http://luoyeshu.com/demo/fullscreen/)
+Here is [demo](http://luoyeshu.com/demo/fullscreen/)
 
 ##  How to use?
 ```javascript
