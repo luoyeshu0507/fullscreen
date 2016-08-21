@@ -1,7 +1,7 @@
 # fullscreen.js
-A js plugin which let you fullscreen a DOM Element on browser.
+A js plugin which let you fullscreen a DOM Element on your browsers.
 
-Here is [demo](http://luoyeshu.com/demo/fullscreen/)
+Here is a [demo](http://luoyeshu.com/demo/fullscreen/)
 
 ##  How to use?
 ```javascript
@@ -10,9 +10,12 @@ var full=new fullscreen({
 	element:document.getElementById("full"),//the dom element you want to view on fullscreen
 	fullscreenBtn:document.getElementById("btn")//the dom element you will click to do this
 });
+
+// now you can fullscreen a DOM element like this.
+full.launchFullscreen();
 ```
 
-## API
+## API list
 | api                 |    description                   |
 | :------------------ | --------------------------------:|
 | launchFullscreen()  |           fullscreen the DOM     |
