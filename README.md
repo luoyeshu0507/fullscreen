@@ -4,6 +4,7 @@ A js plugin which let you fullscreen a DOM Element on your browsers.
 Here is a [demo](http://luoyeshu.com/demo/fullscreen/)
 
 ##  How to use?
+
 ```javascript
 var full=new fullscreen({
 	btnClass:"active", //the className which shold be toggled on the button after you click to fullscreen some DOM or not;
